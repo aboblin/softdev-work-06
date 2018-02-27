@@ -4,12 +4,22 @@
 </head>
 <body>
 	Hello <br>
-	Input as many as you like!
-	<form action="/answer/">
-		Author: <input type="text" name="authorbox">
-		Score: <input type="text" name="scorebox">
-		Tag: <input type="text" name="tagbox">
-		<input type="button" value="subMIT">
+	Input one! <br>
+	<form method = "POST" action="/authors">
+	  Search by Author. <br>
+	  Author: <input type="text" name="authorbox"><br>
+	  <input type="submit" value="subMIT"><br>
 	</form>
+	<form method = "POST" action="/scores">
+	  Search by score. Returns those with more than the given amount of points.<br>
+	  Score: <input type="text" name="scorebox"><br>
+	  <input type="submit" value="subMIT"><br>
+	</form>
+	<form method = "POST" action="/tags">
+	  Search by Tag. <br>
+	  Tag: (pretty much only serious) <input type="text" name="tagbox"><br>
+	  <input type="submit" value="subMIT"><br>
+	</form>
+
 </body>
 </html>
